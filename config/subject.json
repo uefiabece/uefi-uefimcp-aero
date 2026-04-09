@@ -1,0 +1,28 @@
+{
+  "_comment": "Edit this file when specializing the template for a specific subject.",
+
+  "server_name": "uefi-mcp-template",
+  "subject_name": "Template Subject",
+  "course_name": "Template Course",
+  "institution": "UFABC",
+  "language": "pt-BR",
+
+  "features": {
+    "image_interpretation": false,
+    "symbolic_math": false,
+    "circuit_editing": false,
+    "code_execution": false
+  },
+
+  "difficulty_levels": ["easy", "medium", "hard"],
+  "exercise_styles": ["multiple_choice", "open_answer", "proof", "practical"],
+
+  "content_sections": ["syllabus", "bibliography", "exams", "exercises", "notes", "media"],
+
+  "metadata": {
+    "credits": null,
+    "semester": null,
+    "professor": null,
+    "year": null
+  }
+}
