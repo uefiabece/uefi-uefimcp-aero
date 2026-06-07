@@ -1,17 +1,20 @@
 {
-  "_comment": "Edit this file when specializing the template for a specific subject.",
+  "_comment": "Engenharias da UFABC — cursos de segundo ciclo. Cobre as Engenharias como família de cursos.",
 
-  "server_name": "uefi-mcp-template",
-  "subject_name": "Template Subject",
-  "course_name": "Template Course",
+  "server_name": "uefi-mcp-engenharias",
+  "subject_name": "Engenharias UFABC",
+  "course_name": "Engenharias",
+  "course_code": "ENG",
   "institution": "UFABC",
   "language": "pt-BR",
 
   "features": {
     "image_interpretation": false,
-    "symbolic_math": false,
+    "symbolic_math": true,
     "circuit_editing": false,
-    "code_execution": false
+    "code_execution": false,
+    "curriculum_navigation": true,
+    "pdf_reading": true
   },
 
   "difficulty_levels": ["easy", "medium", "hard"],
@@ -20,9 +23,14 @@
   "content_sections": ["syllabus", "bibliography", "exams", "exercises", "notes", "media"],
 
   "metadata": {
-    "credits": null,
+    "degree_type": "bacharelado_segundo_ciclo",
+    "total_credits_approx": null,
+    "ppc_version": null,
+    "ppc_versions_available": [],
+    "calendar_system": "quadrimestral",
+    "duration_years": null,
+    "year": 2026,
     "semester": null,
-    "professor": null,
-    "year": null
+    "professor": null
   }
 }

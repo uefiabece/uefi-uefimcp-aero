@@ -1,0 +1,3 @@
+python -c "import mcp; import anyio; print('uefi-uefimcp-engenharias OK')"
+claude mcp add --scope user uefi-uefimcp-engenharias -- python "E:\Bibliotecas\Documentos\PROGRAMMING\UEFIabc\uefi-uefimcp-engenharias\run.py"
+claude mcp list

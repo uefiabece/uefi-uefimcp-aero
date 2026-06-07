@@ -1,11 +1,5 @@
 """
-MCP server entry point for a UFABC subject.
-
-This is the template server. When specializing for a subject:
-- Update config/subject.json with subject metadata
-- Fill content/ with subject-specific material
-- Adjust tool list below based on subject needs
-- Update prompts/system.md with subject identity
+MCP server entry point — Engenharias (cursos de segundo ciclo), UFABC.
 """
 
 from __future__ import annotations
@@ -22,6 +16,7 @@ from .resources.loader import ContentLoader
 from .tools.content import register_content_tools
 from .tools.teaching import register_teaching_tools
 from .tools.exercises import register_exercise_tools
+from .tools.curriculum import register_curriculum_tools
 from .prompts.templates import load_prompt
 
 ROOT = Path(__file__).parent.parent
@@ -113,6 +108,7 @@ def build_server(config: dict, loader: ContentLoader) -> Server:
     register_content_tools(all_tools, tool_handlers, loader, config)
     register_teaching_tools(all_tools, tool_handlers, loader, config)
     register_exercise_tools(all_tools, tool_handlers, loader, config)
+    register_curriculum_tools(all_tools, tool_handlers, loader, config)
 
     @server.list_tools()
     async def list_tools() -> list[types.Tool]:

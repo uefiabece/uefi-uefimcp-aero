@@ -3,9 +3,9 @@ requires = ["hatchling"]
 build-backend = "hatchling.build"
 
 [project]
-name = "uefi-uefimcp"
+name = "uefi-uefimcp-engenharias"
 version = "0.1.0"
-description = "MCP server template for UFABC subject specialization"
+description = "MCP server para os cursos de Engenharia da UFABC"
 requires-python = ">=3.11"
 dependencies = [
     "mcp>=1.0.0",
